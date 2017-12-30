@@ -1,9 +1,14 @@
+/*@import url('https://fonts.googleapis.com/css?family=Lobster');*/
+/*@import url('https://fonts.googleapis.com/css?family=Pacifico');*/
+@import url('https://fonts.googleapis.com/css?family=Norican');
+
 body {
   margin: 0;
   padding: 0; }
 
 .firework {
   font-family: 'Roboto', sans-serif;
+  /*font-family: 'Lobster', cursive;*/
   color: #fff;
   min-height: 100vh;
   background: url("bg.png");
@@ -34,12 +39,16 @@ body {
   .firework .timer {
     font-family: 'Roboto', sans-serif;
     font-size: 100px;
-    font-weight: 100;
+    font-weight: 500;
     display: inline-block;
     vertical-align: top;
     letter-spacing: 5px; }
   .firework .text {
-    font-size: 18px; }
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    font-size: 20px; }
+  .firework .ending{
+    font-size: 20px;}
   .firework .clock {
     margin-top: 30px; }
   .firework .clock .column {
