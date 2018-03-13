@@ -1,175 +1,265 @@
 /*@import url('https://fonts.googleapis.com/css?family=Lobster');*/
-/*@import url('https://fonts.googleapis.com/css?family=Pacifico');*/
-@import url('https://fonts.googleapis.com/css?family=Norican');
 
+
+/*@import url('https://fonts.googleapis.com/css?family=Pacifico');*/
+
+@import url('https://fonts.googleapis.com/css?family=Norican');
 body {
-  margin: 0;
-  padding: 0; }
+    margin: 0;
+    padding: 0;
+}
 
 .firework {
-  font-family: 'Roboto', sans-serif;
-  /*font-family: 'Lobster', cursive;*/
-  color: #fff;
-  min-height: 100vh;
-  background: url("bg.png");
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-position: center;
-  background-size: cover;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  text-align: center;
-  margin: 0;
-  padding: 0;
-  justify-content: center;
-  align-items: center;
-  display: flex; }
+    font-family: 'Roboto', sans-serif;
+    /*font-family: 'Lobster', cursive;*/
+    color: #fff;
+    min-height: 100vh;
+    background: url("bg.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
 
 .days {
-  display: none; }
+    display: none;
+}
 
 .firework {
-  /*-- Responsive-Code --*/ }
-  .firework .wrapper {
+    /*-- Responsive-Code --*/
+}
+
+.firework .wrapper {
     box-sizing: border-box;
     width: 640px;
     margin: 0 auto;
-    text-align: center; }
-  .firework .timer {
+    text-align: center;
+}
+
+.firework .timer {
     font-family: 'Roboto', sans-serif;
     font-size: 100px;
     font-weight: 500;
     display: inline-block;
     vertical-align: top;
-    letter-spacing: 5px; }
-  .firework .text {
+    letter-spacing: 5px;
+}
+
+.firework .text {
     font-family: 'Roboto', sans-serif;
     font-weight: 500;
-    font-size: 20px; }
-  .firework .ending{
-    font-size: 20px;}
-  .firework .clock {
-    margin-top: 30px; }
-  .firework .clock .column {
+    font-size: 20px;
+}
+
+.firework .ending {
+    font-size: 20px;
+}
+
+.firework .clock {
+    margin-top: 30px;
+}
+
+.firework .clock .column {
     display: inline-block;
-    width: 19%; }
-  .firework p {
-    line-height: 27px; }
-  .firework h1 {
+    width: 19%;
+}
+
+.firework p {
+    line-height: 27px;
+}
+
+.firework h1 {
     font-size: 75px;
     margin: 75px 0 50px;
     margin-top: 0px;
     font-weight: 300;
-    text-transform: uppercase; 
-  }
-  .firework h2 {
+    text-transform: uppercase;
+}
+
+.firework h2 {
     font-size: 31px;
     margin-top: 20px;
     font-weight: 300;
-    margin: 50px 0 30px; }
-  .firework h3 {
-    font-size: 16px; }
-  .firework a {
+    margin: 50px 0 30px;
+}
+
+.firework h3 {
+    font-size: 16px;
+}
+
+.firework a {
     color: #a3deff;
-    text-decoration: none; }
-  @media only screen and (max-width: 768px) {
+    text-decoration: none;
+}
+
+@media only screen and (max-width: 768px) {
     .firework .wrapper {
-      width: 100%;
-      padding: 0 20px; }
+        width: 100%;
+        padding: 0 20px;
+    }
     .firework .timer {
-      font-size: 35px; } }
-  .firework .container {
+        font-size: 35px;
+    }
+}
+
+.firework .container {
     width: 100%;
     max-width: 1200px;
-    margin: 0 auto; }
-  .firework .clear-loading {
+    margin: 0 auto;
+}
+
+.firework .clear-loading {
     text-align: center;
     margin: 0 auto;
     position: relative;
-    box-sizing: border-box; }
-  @media screen and (max-width: 1920px) {
+    box-sizing: border-box;
+}
+
+@media screen and (max-width: 1920px) {
     .firework h1 {
-      margin: 100px 0;
-      margin-top: 0px; }
+        margin: 100px 0;
+        margin-top: 0px;
+    }
     .firework h2 {
-      margin: 50px 0; }
+        margin: 50px 0;
+    }
     .firework .clock {
-      margin-top: 50px; } }
-  @media screen and (max-width: 1680px) {
+        margin-top: 50px;
+    }
+}
+
+@media screen and (max-width: 1680px) {
     .firework h1 {
-      margin: 100px 0 50px;
-      margin-top: 0px; } }
-  @media screen and (max-width: 1600px) {
+        margin: 100px 0 50px;
+        margin-top: 0px;
+    }
+}
+
+@media screen and (max-width: 1600px) {
     .firework h1 {
-      margin: 75px 0 50px;
-      margin-top: 0px; } }
-  @media screen and (max-width: 1366px) {
+        margin: 75px 0 50px;
+        margin-top: 0px;
+    }
+}
+
+@media screen and (max-width: 1366px) {
     .firework h1 {
-      margin: 50px 0;
-      margin-top: 0px; }
+        margin: 50px 0;
+        margin-top: 0px;
+    }
     .firework h2 {
-      margin: 50px 0 30px; }
+        margin: 50px 0 30px;
+    }
     .firework .clock {
-      margin-top: 30px; }
+        margin-top: 30px;
+    }
     .firework .footer {
-      margin-top: 50px; } }
-  @media screen and (max-width: 1024px) {
+        margin-top: 50px;
+    }
+}
+
+@media screen and (max-width: 1024px) {
     .firework h1 {
-      font-size: 50px;
-      margin: 40px 0;
-      margin-top: 0px; }
+        font-size: 50px;
+        margin: 40px 0;
+        margin-top: 0px;
+    }
     .firework h2 {
-      margin: 30px 0; }
+        margin: 30px 0;
+    }
     .firework .timer {
-      font-size: 75px; } }
-  @media screen and (max-width: 991px) {
+        font-size: 75px;
+    }
+}
+
+@media screen and (max-width: 991px) {
     .firework h1 {
-      font-size: 40px;
-      margin-top: 0px; } }
-  @media screen and (max-width: 640px) {
+        font-size: 40px;
+        margin-top: 0px;
+    }
+}
+
+@media screen and (max-width: 640px) {
     .firework h1 {
-      font-size: 35px;
-      margin-top: 0px; } }
-  @media screen and (max-width: 568px) {
+        font-size: 35px;
+        margin-top: 0px;
+    }
+}
+
+@media screen and (max-width: 568px) {
     .firework h1 {
-      font-size: 30px;
-      margin: 30px 0;
-      margin-top: 0px; }
+        font-size: 30px;
+        margin: 30px 0;
+        margin-top: 0px;
+    }
     .firework h2 {
-      margin: 20px 0;
-      font-size: 25px; }
+        margin: 20px 0;
+        font-size: 25px;
+    }
     .firework h3 {
-      font-size: 14px; }
+        font-size: 14px;
+    }
     .firework .timer {
-      font-size: 65px;
-      letter-spacing: 0; }
+        font-size: 65px;
+        letter-spacing: 0;
+    }
     .firework .footer p {
-      font-size: 13px; } }
-  @media screen and (max-width: 414px) {
+        font-size: 13px;
+    }
+}
+
+@media screen and (max-width: 414px) {
     .firework .wrapper {
-      padding: 0 10px; }
+        padding: 0 10px;
+    }
     .firework .text {
-      font-size: 16px; } }
-  @media screen and (max-width: 384px) {
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 384px) {
     .firework .timer {
-      font-size: 55px; } }
-  @media screen and (max-width: 375px) {
+        font-size: 55px;
+    }
+}
+
+@media screen and (max-width: 375px) {
     .firework h1 {
-      font-size: 25px;
-      margin: 30px 0;
-      margin-top: 0px; }
+        font-size: 25px;
+        margin: 30px 0;
+        margin-top: 0px;
+    }
     .firework .timer {
-      font-size: 40px; } }
-  @media screen and (max-width: 360px) {
+        font-size: 40px;
+    }
+}
+
+@media screen and (max-width: 360px) {
     .firework .clock {
-      margin-left: -20px; }
+        margin-left: -20px;
+    }
     .firework .clock .column {
-      width: 20%; } }
-  @media screen and (max-width: 320px) {
+        width: 20%;
+    }
+}
+
+@media screen and (max-width: 320px) {
     .firework .clock {
-      margin-left: -10px; }
+        margin-left: -10px;
+    }
     .firework .text {
-      font-size: 13px; } }
+        font-size: 13px;
+    }
+}
+
 
 /*-- //Responsive-Code --*/
