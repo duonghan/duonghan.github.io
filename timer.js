@@ -54,6 +54,7 @@ $(function(){
     function endEvent($el, newText, hideEl){
         $el.text(newText);
         hideEl.hide();
+        window.location.replace("https://duonghan.github.io/birthday");
     }
     timer();
 });
