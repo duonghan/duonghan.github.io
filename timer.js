@@ -1,8 +1,10 @@
 $(function(){
+    var config;
+    
     function timer(settings){
-        var config = {
+        config = {
             // Cai dat ngay ket thuc
-            endDate: '2018-08-11 00:00',
+            endDate: '2019-08-11 00:00',
             // Cai dat time zone
             timeZone: 'Asia/Ho_Chi_Minh', 
             hours: $('#hours'),
@@ -11,9 +13,11 @@ $(function(){
             // Dong thong bao khi ket thuc dem nguoc
             newSubMessage: 'and should be back online in a few minutes...'
         };
+        
         function prependZero(number){
             return number < 10 ? '0' + number : number;
         }
+        
         $.extend(true, config, settings || {});
         var currentTime = moment();
         var endDate = moment.tz(config.endDate, config.timeZone);
@@ -23,14 +27,17 @@ $(function(){
         var interval = 1000;
         var subMessage = $('.sub-message');
         var clock = $('.clock');
+        
         if(diffTime < 0){
             endEvent(subMessage, config.newSubMessage, clock);
             return;
         }
+        
         if(days > 0){
             $('#days').text(prependZero(days));
             $('.days').css('display', 'inline-block');
         }
+        
         var intervalID = setInterval(function(){
             duration = moment.duration(duration - interval, 'milliseconds');
             var hours = duration.hours(),
@@ -51,10 +58,13 @@ $(function(){
             config.seconds.text(prependZero(seconds));
         }, interval);
     }
+    
     function endEvent($el, newText, hideEl){
+        config.endDate.replace(config.endDate.slice(0,4), parseInt(config.endDate.slice(0,4)) + 1);
         $el.text(newText);
         hideEl.hide();
         window.location.replace("https://duonghan.github.io/birthday");
     }
+    
     timer();
 });
