@@ -60,7 +60,7 @@ $(function(){
     }
     
     function endEvent($el, newText, hideEl){
-        config.endDate.replace(config.endDate.slice(0,4), parseInt(config.endDate.slice(0,4)) + 1);
+//         config.endDate.replace(config.endDate.slice(0,4), parseInt(config.endDate.slice(0,4)) + 1);
         $el.text(newText);
         hideEl.hide();
         window.location.replace("https://duonghan.github.io/birthday");
